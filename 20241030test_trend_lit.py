@@ -45,7 +45,7 @@ def main():
     
     # 地區選擇
     region_mapping = {
-        '全球': 'GLOBAL',
+        
         '美國': 'united_states',
         '日本': 'japan',
         '台灣': 'taiwan',
@@ -117,7 +117,7 @@ def main():
     if auto_update:
         st.sidebar.write(f'每{update_interval}分鐘自動更新一次')
         time.sleep(update_interval * 60)
-        st.experimental_rerun()
+        st.rerun()
 
 if __name__ == "__main__":
     main()
